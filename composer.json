@@ -16,9 +16,16 @@
         }
     ],
 
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:gabfr/Behat.git"
+        }
+    ],
+
     "require": {
         "php":                       ">=7.2",
-        "behat/behat":               "^3.5.0",
+        "behat/behat":               "dev-master",
         "symfony/framework-bundle":  "~4.0|~5.0"
     },
 
