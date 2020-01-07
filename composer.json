@@ -19,7 +19,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:gabfr/Behat.git"
+            "url": "git@github.com:LinioPay/Behat.git"
         }
     ],
 
