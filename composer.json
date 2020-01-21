@@ -42,7 +42,7 @@
     "require": {
         "php":                       ">=7.2",
         "behat/behat":               "dev-master",
-        "symfony/framework-bundle":  "~4.0|~5.0",
+        "symfony/framework-bundle":  "~4.0|~5.0"
     },
 
     "require-dev": {
