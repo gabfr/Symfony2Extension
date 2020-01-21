@@ -23,19 +23,19 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:FriendsOfBehat/Mink.git"
+            "url": "https://github.com/FriendsOfBehat/Mink.git"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:DonCallisto/MinkExtension.git"
+            "url": "https://github.com/DonCallisto/MinkExtension.git"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:breizh81/Mink.git"
+            "url": "https://github.com/breizh81/Mink.git"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:ruudk/MinkBrowserKitDriver.git"
+            "url": "https://github.com/ruudk/MinkBrowserKitDriver.git"
         }
     ],
 
