@@ -25,7 +25,7 @@ default:
                     services:
                       - '@session'
                     params:
-                      - "%%kernel.root_dir%%"
+                      - "%%kernel.project_dir%%"
                       - "%%kernel.environment%%"
                       - "%%kernel.debug%%"
                       - "%%kernel.name%%"
