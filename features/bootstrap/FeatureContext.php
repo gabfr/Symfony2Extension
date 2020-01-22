@@ -31,7 +31,7 @@ class FeatureContext implements SnippetAcceptingContext
             throw new \RuntimeException('Unable to find the PHP executable.');
         }
         $this->phpBin = $php;
-        $this->process = new Process(null);
+        $this->process = new Process([]);
     }
 
     /**
