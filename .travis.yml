@@ -28,10 +28,10 @@ before_install:
   - composer self-update
   - mkdir -p ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d && echo "memory_limit=-1" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
   - if [ "$DEPS" = 'dev' ]; then perl -pi -e 's/^}$/,"minimum-stability":"dev"}/' composer.json; fi;
-  - if [ "$SYMFONY_VERSION" != "" ]; then composer require --no-update "symfony/symfony:${SYMFONY_VERSION}"; fi;
+  - if [ "$SYMFONY_VERSION" != "" ]; then composer require --prefer-dist --no-update "symfony/symfony:${SYMFONY_VERSION}"; fi;
 
 install:
-  - composer install --no-progress
+  - composer install --prefer-dist --no-progress
 
 before_script:
   - export PATH=./vendor/bin:$PATH
