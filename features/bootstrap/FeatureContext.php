@@ -45,15 +45,15 @@ class FeatureContext implements SnippetAcceptingContext
     {
         $argumentsString = strtr($argumentsString, array('\'' => '"'));
 
-        $this->process->setWorkingDirectory(__DIR__ . '/../../testapp');
-        $this->process->setCommandLine(
+        $this->process = Process::fromShellCommandline(
             sprintf(
                 '%s %s %s %s',
                 $this->phpBin,
                 escapeshellarg(BEHAT_BIN_PATH),
                 $argumentsString,
                 strtr('--format-settings=\'{"timer": false}\'', array('\'' => '"', '"' => '\"'))
-            )
+            ),
+            __DIR__ . '/../../testapp'
         );
         $this->process->start();
         $this->process->wait();
